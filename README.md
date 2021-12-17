@@ -2,5 +2,5 @@
 
 ## Próximas features
 
-* Adcionar uma parte no site mostrando os planos
+* Adicionar uma parte no site mostrando os planos
 * Melhorar o UI e UX
