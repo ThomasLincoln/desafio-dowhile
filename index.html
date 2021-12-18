@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <section class="home">
@@ -21,8 +22,8 @@
           <a href=""><p>Future Education</p></a>
         </div>
         <div class="options-nav">
-          <a href=""><p>Sobre</p></a>
-          <a href=""><p>Planos</p></a>
+          <a href="#sobre"><p>Sobre</p></a>
+          <a href="#features"><p>Features</p></a>
         </div>
       </nav>
       <div class="content -home">
@@ -30,12 +31,12 @@
           <h1>Caminhando para um</h1>
           <h1>futuro melhor</h1>
           <h2>Estamos aqui para te ajudar na busca por um futuro melhor</h2>
-          <p class="botao"><a href="">Iniciar Aprendizado</a></p>
+          <a href=""><p class="botao">Iniciar Aprendizado</p></a>
         </div>
         <img class="img-01" src="img-01.png" alt="imagem ilustrativa" />
       </div>
     </section>
-    <section class="about-section">
+    <section class="about-section" id="sobre">
       <div class="about">
         <h1>Sobre a Future Education</h1>
         <p>
@@ -55,36 +56,43 @@
         <p>Fazemos isso para que todos que desejam aprender possam.</p>
       </div>
     </section>
-    <section class="funcionalidades">
+    <section class="funcionalidades" id="features">
       <div class="wrap -func">
         <div class="left -func">
           <img src="img-02.png" alt="imagem ilustrativa features" />
         </div>
         <div class="right -func">
-            <h1>Nós iremos fornecer conhecimento de qualidade.</h1>
-            <div class="functions">
+            <h1 class="h1-func">Nós iremos fornecer conhecimento de qualidade.</h1>
+            <div class="functions -1">
                 <span class="material-icons"> done </span>
                 <p>Você terá acesso as seguintes ferramentas</p>
             </div>
-            <div class="functions">
+            <div class="functions -2">
                 <span class="material-icons"> done </span>
                 <p>Professores atualizados nas mais atuais tecs.</p>
             </div>
-            <div class="functions">
+            <div class="functions -3">
                 <span class="material-icons"> done </span>
                 <p>Conteúdo grátis.</p>
             </div>
-            <div class="functions">
+            <div class="functions -4">
                 <span class="material-icons"> done </span>
                 <p>Interação com empresas e funcionários da área.</p>
             </div>
-            <div class="functions">
+            <div class="functions -5">
                 <span class="material-icons"> done </span>
                 <p>Forma de aprendizado simples e direta.</p>
             </div>
         </div>
       </div>
     </section>
-    <section class="plans"></section>
+    <script>
+      ScrollReveal({ reset: true });
+      ScrollReveal().reveal('.home');
+      ScrollReveal().reveal('.left.-func');
+      ScrollReveal().reveal('.h1-func');
+      ScrollReveal().reveal('.functions', {delay: 200});
+      ScrollReveal().reveal('.about');
+    </script>
   </body>
 </html>

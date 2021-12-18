@@ -43,7 +43,7 @@ nav{
 
 /* home */
 .home{
-    margin: 2pc 8pc;
+    padding: 2pc 8pc;
 }
 .content.-home{
     display: flex;
@@ -75,6 +75,9 @@ h1{
     height: auto;
     padding: 1.5pc 2pc;
     border-radius: 1pc;
+}
+.botao:hover{
+    background-color: rgb(117, 27, 201);
 }
 /* home direito */
 .img-01{
